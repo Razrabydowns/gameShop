@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
     <title>gameShop</title>
+    <script type="text/javascript" src="js/registration.js"></script>
 </head>
 
 <header>
@@ -52,9 +53,27 @@
                 </div>
             </div>
         </div>
-        <div class="login">
+        <div class="login" onclick='InRegistration()'>
             <a href="#">Регистрация</a>
             <a href="#">Вход</a>
+        </div>
+        <div class="registration" id="registration">
+            <form>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutRegistration()'>
+                <br>
+                <p>Номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="login"
+                        placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                <p>Пароль:
+                    <img src="src/lock.png">
+                    <br><input type="password" id="password" placeholder="IDDQD"></input>
+                    <br><br>
+                    <a style="color: #FBD406">Я забыл пароль</a>
+                    <br>
+                    <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+            </form>
         </div>
     </div>
 </header>
