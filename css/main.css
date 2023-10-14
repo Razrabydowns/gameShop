@@ -3,6 +3,11 @@
     src: url("../fonts/bitcell_memesbruh03.ttf");
 }
 
+input::placeholder {
+    font-family: 'Bit Cell';
+    font-size: 36px;
+}
+
 header {
     margin: auto;
     font-family: 'Bit Cell';
@@ -130,7 +135,7 @@ header a:active {
     padding-left: 50px;
     color: white;
 
-
+    /*Установка по середине*/
     position: absolute;
     left: 50%;
     top: 50%;
@@ -151,7 +156,45 @@ header a:active {
     font-size: 27px;
 }
 
+
+.search {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.search input {
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background: #FFFFFF;
+    outline: none;
+    height: 54px;
+    width: 690px;
+    /*Красная строка*/
+    text-indent: 70px;
+    color: black;
+    font-size: 27px;
+}
+
+.search img {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    z-index: 1;
+}
+
 body {
+    font-family: 'Bit Cell';
     background: linear-gradient(to top, #B7A1C1, #531E6C);
     margin: 0;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-family: 'Bit Cell';
+    font-size: 30px;
+    padding-left: 50px;
 }
