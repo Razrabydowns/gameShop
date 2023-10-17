@@ -101,6 +101,10 @@ header a:active {
 
 /* Изменение цвета выпадающих ссылок при наведении курсора */
 .dropdown-content a:hover {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     background-color: #DE4FA0;
 }
 
@@ -198,3 +202,48 @@ footer {
     font-size: 30px;
     padding-left: 50px;
 }
+
+audio {
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    background-color: #f1f1f1;
+    border: none;
+  }
+   
+  audio::-webkit-media-controls-panel {
+    background-color: #863e3e;
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-play-button {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-volume-slider-container {
+    width: 80%;
+  }
+   
+  audio::-webkit-media-controls-seek-back-button {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-seek-forward-button {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-mute-button {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-current-time-display {
+    color: #000;
+  }
+   
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #000;
+  }

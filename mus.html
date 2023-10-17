@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
+    <title>gameShop</title>
+    <script type="text/javascript" src="js/registration.js"></script>
+</head>
+
+<header>
+    <div class="menu">
+        <a class="menuRef" href="main.html">OLD_STUFF</a>
+        <div class="menu-items">
+            <div class="dropdown">
+                <p class="dropbtn">VHS</p>
+                <div class="dropdown-content">
+                    <a href="vhs.html">Ретро-классика</a>
+                    <a href="vhs.html">Ужасы и фантастика</a>
+                    <a href="vhs.html">Боевики и детективы</a>
+                    <a href="vhs.html">Аниме</a>
+                    <a href="vhs.html">Хентай и эротика</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Консоли и диски</p>
+                <div class="dropdown-content">
+                    <a href="#">Nintendo</a>
+                    <a href="#">Playstation</a>
+                    <a href="#">Sega Master Systems</a>
+                    <a href="#">Atari</a>
+                    <a href="#">Диски </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Музыка</p>
+                <div class="dropdown-content">
+                    <a href="mus.html">СD диски </a>
+                    <a href="mus.html">Касеты</a>
+                    <a href="mus.html">Винил</a>
+                    <a href="mus.html">Walkman</a>
+                    <a href="mus.html">Сборные альбомы</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Аксессуары</p>
+                <div class="dropdown-content">
+                    <a href="#">Переходники</a>
+                    <a href="#">Геймпады</a>
+                    <a href="#">Фигурки</a>
+                    <a href="#">Плакаты</a>
+                </div>
+            </div>
+        </div>
+        <div class="login" onclick='InRegistration()'>
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+        </div>
+        <div class="registration" id="registration">
+            <form>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutRegistration()'>
+                <br>
+                <p>Номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="login"
+                        placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                <p>Пароль:
+                    <img src="src/lock.png">
+                    <br><input type="password" id="password" placeholder="IDDQD"></input>
+                    <br><br>
+                    <a style="color: #FBD406">Я забыл пароль</a>
+                    <br>
+                    <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+            </form>
+        </div>
+    </div>
+    <div class="search">
+        <form>
+            <img src="src/search.png" type="submit" name="submit" id="submit">
+            <input type="text" name="text" id="search" placeholder="Найдите нужный вам товар, указав название"></input>
+        </form>
+    </div>
+</header>
+
+<body>
+    <h2 style="position: absolute;left: 10%; font-size: 100px;">Music</h2>
+    <img src="src/plast.gif" style="position: absolute; top:30%;left: 0%;">
+</body>
+<body>
+    <audio controls src="media/Super_Mario.mp3" >
+        <a href="media/Super_Mario.mp3"> Download audio </a>
+    </audio>
+</body>
+<footer>
+    <p>Круглосуточно<img src="src/clock.png">
+        <br>Новосибирск-Советская 40<img src="src/locationPointer.png">
+    </p>
+</footer>
+
+</html>
