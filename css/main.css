@@ -247,3 +247,27 @@ audio {
   audio::-webkit-media-controls-time-remaining-display {
     color: #000;
   }
+
+  #playlist {
+    position: fixed;
+    height: 50px;
+    top: 50%;
+    right: 20%;
+    height: 50px;
+    list-style: none;
+  }
+
+  #playlist li{
+    list-style: none;
+  }
+
+  #playlist a {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+  }
+
+  #playlist .current-song a {
+    height: 50px;
+    color:blue;
+  }
