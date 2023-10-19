@@ -26,14 +26,21 @@ header {
     display: flex;
 }
 
-
 .menuRef {
-
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 50;
     text-decoration: none;
-    padding-right: 150px;
+    padding-right: 3%;
+}
+
+.menu-items {
+  margin: 0;
+  width: 100%;
+}
+
+.menu-items div{
+  padding-left: 5%;
 }
 
 .login {
@@ -41,8 +48,9 @@ header {
     display: flex;
     flex-flow: column wrap;
     color: white;
-    padding: 16px;
-    padding-left: 400px;
+    position: absolute;
+    right: 2%;
+    top: 1%;
 }
 
 header a {
@@ -67,7 +75,6 @@ header a:active {
 .dropbtn {
     color: white;
     border: none;
-    padding-right: 150px;
 }
 
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
@@ -89,6 +96,10 @@ header a:active {
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     width: 228px;
+}
+
+.dropdown div {
+    padding-left: 0;
 }
 
 /* Ссылки внутри выпадающего списка */
@@ -117,10 +128,6 @@ header a:active {
 .dropdown:hover .dropbtn {
     background-color: purple;
 }
-
-
-
-
 
 .registration {
     font-size: 35px;
@@ -207,18 +214,18 @@ audio {
     width: 100%;
     bottom: 0px;
     position: fixed;
-    background-color: #f1f1f1;
+    background-color: #9257b9;
     border: none;
   }
    
   audio::-webkit-media-controls-panel {
-    background-color: #863e3e;
+    background-color: #9257b9;
     color: #000;
   }
    
   audio::-webkit-media-controls-play-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #2a60c4;
   }
    
   audio::-webkit-media-controls-volume-slider-container {
@@ -226,18 +233,18 @@ audio {
   }
    
   audio::-webkit-media-controls-seek-back-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #095e59;
   }
    
   audio::-webkit-media-controls-seek-forward-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #29963b;
   }
    
   audio::-webkit-media-controls-mute-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #45cbe2;
   }
    
   audio::-webkit-media-controls-current-time-display {
@@ -246,4 +253,27 @@ audio {
    
   audio::-webkit-media-controls-time-remaining-display {
     color: #000;
+  }
+
+  #playlist {
+    position: fixed;
+    height: 50px;
+    top: 50%;
+    right: 20%;
+    list-style: none;
+  }
+
+  #playlist li{
+    list-style: none;
+  }
+
+  #playlist a {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+  }
+
+  #playlist .current-song a {
+    height: 50px;
+    color:blue;
   }

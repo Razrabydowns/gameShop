@@ -87,16 +87,29 @@
 <body>
     <h2 style="position: absolute;left: 10%; font-size: 100px;">Music</h2>
     <img src="src/plast.gif" style="position: absolute; top:30%;left: 0%;">
-</body>
-<body>
-    <audio controls src="media/Super_Mario.mp3" >
+<div>
+    <audio src="" controls id="audioPlayer" >
         <a href="media/Super_Mario.mp3"> Download audio </a>
     </audio>
-</body>
+    <div style="left: 50%; top: 50%;">
+        <ul id="playlist">
+            <li class="current-song"><a href="media/Super_Mario.mp3">Mario</a></li>
+            <li><a href="media/Battletoads.mp3">Battletoads</a></li>
+            <li><a href="media/ChipDail.mp3">Chip and Dail</a></li>
+            <li><a href="media/tetris.mp3">Tetris</a></li>
+        </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        audioPlayer();
+    </script>
+    </div>
+</div>
 <footer>
     <p>Круглосуточно<img src="src/clock.png">
         <br>Новосибирск-Советская 40<img src="src/locationPointer.png">
     </p>
 </footer>
+</body>
 
 </html>
