@@ -129,10 +129,6 @@ header a:active {
     background-color: purple;
 }
 
-
-
-
-
 .registration {
     font-size: 35px;
     display: none;
@@ -218,18 +214,18 @@ audio {
     width: 100%;
     bottom: 0px;
     position: fixed;
-    background-color: #f1f1f1;
+    background-color: #9257b9;
     border: none;
   }
    
   audio::-webkit-media-controls-panel {
-    background-color: #863e3e;
+    background-color: #9257b9;
     color: #000;
   }
    
   audio::-webkit-media-controls-play-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #2a60c4;
   }
    
   audio::-webkit-media-controls-volume-slider-container {
@@ -237,18 +233,18 @@ audio {
   }
    
   audio::-webkit-media-controls-seek-back-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #095e59;
   }
    
   audio::-webkit-media-controls-seek-forward-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #29963b;
   }
    
   audio::-webkit-media-controls-mute-button {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #9257b9;
+    color: #45cbe2;
   }
    
   audio::-webkit-media-controls-current-time-display {
