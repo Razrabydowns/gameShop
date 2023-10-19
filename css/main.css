@@ -26,14 +26,21 @@ header {
     display: flex;
 }
 
-
 .menuRef {
-
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 50;
     text-decoration: none;
-    padding-right: 150px;
+    padding-right: 3%;
+}
+
+.menu-items {
+  margin: 0;
+  width: 100%;
+}
+
+.menu-items div{
+  padding-left: 5%;
 }
 
 .login {
@@ -41,8 +48,9 @@ header {
     display: flex;
     flex-flow: column wrap;
     color: white;
-    padding: 16px;
-    padding-left: 400px;
+    position: absolute;
+    right: 2%;
+    top: 1%;
 }
 
 header a {
@@ -67,7 +75,6 @@ header a:active {
 .dropbtn {
     color: white;
     border: none;
-    padding-right: 150px;
 }
 
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
@@ -89,6 +96,10 @@ header a:active {
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     width: 228px;
+}
+
+.dropdown div {
+    padding-left: 0;
 }
 
 /* Ссылки внутри выпадающего списка */
@@ -253,7 +264,6 @@ audio {
     height: 50px;
     top: 50%;
     right: 20%;
-    height: 50px;
     list-style: none;
   }
 
