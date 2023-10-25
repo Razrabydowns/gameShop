@@ -1,0 +1,156 @@
+.header {
+    display: flex;
+    height: 100px;
+}
+
+.vhs-content {
+    display: flex;
+    padding-top: 5%;
+}
+
+/*#region List*/
+.vhs-list {
+    float: left;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.vhs-items {
+    margin: 0;
+    width: 100%;
+}
+
+.vhs-dropdown {
+    background-color: #576FAD;
+    margin: 15px 15px 15px 0;
+
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 280px;
+
+    position: relative;
+    ;
+}
+
+.vhs-dropdown img {
+    float: right;
+    padding-top: 7.5%;
+}
+
+.vhs-dropbtn {
+    position: relative;
+    display: inline-block;
+}
+
+.vhs-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -150%;
+
+    background-color: #D1D7E9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 280px;
+}
+
+/* Ссылки внутри выпадающего списка */
+.vhs-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.vhs-dropdown-content a:hover {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: #E6E9F3;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.vhs-dropdown:hover .vhs-dropdown-content {
+    display: block;
+}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.vhs-dropdown:hover .vhs-dropbtn {
+    background-color: purple;
+}
+
+/*#endregion List*/
+
+/*#region Best*/
+.vhs-best {
+    display: inline-block;
+    width: 50%;
+}
+
+.vhs-best h3 {
+    margin: 0;
+    margin-right: 10%;
+    text-align: right;
+    font-size: 50px;
+}
+
+.vhs-view {
+    background-color: gray;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+}
+
+.vhs-review {
+    position: relative;
+    display: flex;
+    width: 400px;
+    font-size: 25;
+    padding: 10px;
+}
+
+.vhs-label {
+    background-color: #EBBD47;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-left: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    height: 25%;
+}
+
+.vhs-label img {
+    float: right;
+}
+
+.vhs-review p {
+    padding-left: 10px;
+}
+
+.vhs-border {
+
+    width: 15px;
+    border-left: 3px solid black;
+}
+
+/*#endregion Best*/
+.footer {
+    display: block;
+    width: 100%;
+    height: 10%;
+    background-image: url('../src/cassette.png');
+    background-repeat: repeat;
+    background-size: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
