@@ -3,6 +3,19 @@
     height: 100px;
 }
 
+.header h2 {
+    font-size: 100px;
+    margin-left: 5%;
+}
+
+.header p {
+    font-size: 65px;
+}
+
+.header br {
+    font-size: 65px;
+}
+
 .vhs-content {
     display: flex;
     padding-top: 5%;
@@ -84,7 +97,7 @@
 
 /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
 .vhs-dropdown:hover .vhs-dropbtn {
-    background-color: purple;
+    background-color: #576FAD;
 }
 
 /*#endregion List*/
