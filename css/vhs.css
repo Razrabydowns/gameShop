@@ -3,6 +3,7 @@
     height: 100px;
 }
 
+/*#region Header*/
 .header h2 {
     font-size: 100px;
     margin-left: 5%;
@@ -20,6 +21,8 @@
     display: flex;
     padding-top: 5%;
 }
+
+/*#endregion Header*/
 
 /*#region List*/
 .vhs-list {
@@ -156,6 +159,7 @@
 }
 
 /*#endregion Best*/
+
 .footer {
     display: block;
     width: 100%;
