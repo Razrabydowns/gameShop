@@ -73,6 +73,8 @@
                     <a style="color: #FBD406" onclick='InIForgotPassword()'>Я забыл пароль</a>
                     <br>
                     <br>Нет аккаунта?<a style="color: #CE323B;" onclick='InRegistration()'>Зарегистрируйтесь</a>
+                </p>
+                <button type="button">Войти</button>
             </form>
         </div>
         <div class="enter" id="registration">
@@ -82,13 +84,13 @@
                     src="src/cancel.png" onclick='OutRegistration()'>
                 <p>Номер телефона:
                     <img src="src/phoneCall.png">
-                    <br><input type="text" id="login"></input>
+                    <br><input type="text" id="loginReg"></input>
                 <p>Пароль:
                     <img src="src/lock.png">
-                    <br><input type="password" id="password"></input>
+                    <br><input type="password" id="passwordReg"></input>
                 <p>Почта:
                     <img src="src/mail.png">
-                    <br><input type="text" id="mail"></input>
+                    <br><input type="text" id="emailReg"></input>
 
                 <p style="font-size: 20px;"><input style="height:30px; width: 30px;" type="checkbox"
                         id="isGetAd"></input>Я хочу получать
@@ -103,15 +105,16 @@
                 <br>
                 <p>Нам нужен ваш номер телефона:
                     <img src="src/phoneCall.png">
-                    <br><input type="text" id="login"
+                    <br><input type="text" id="loginForgot"
                         placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
                 <p>Или почта:
                     <img src="src/mail.png">
-                    <br><input type="text" id="email" placeholder="IDDQD"></input>
+                    <br><input type="text" id="emailForgot" placeholder="IDDQD"></input>
                 <p>Мы отправим вам письмо c
                 <div style="color: red;">временным паролем</div>> на почту или
                 в сообщения. По возможности смените
                 пароль после завершения этой процедуры.</p>
+                <button type="button">Отправить письмо на почту</button>
             </form>
         </div>
     </div>
