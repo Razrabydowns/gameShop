@@ -2,17 +2,17 @@ audio {
     width: 100%;
     bottom: 0px;
     position: fixed;
-    background-color: #9257b9;
+    background-color: #97A5C8;
     border: none;
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: #9257b9;
+    background-color: #97A5C8;
     color: #000;
 }
 
 audio::-webkit-media-controls-play-button {
-    background-color: #9257b9;
+    background-color: #97A5C8;
     color: #2a60c4;
 }
 
@@ -21,17 +21,17 @@ audio::-webkit-media-controls-volume-slider-container {
 }
 
 audio::-webkit-media-controls-seek-back-button {
-    background-color: #9257b9;
+    background-color: #97A5C8;
     color: #095e59;
 }
 
 audio::-webkit-media-controls-seek-forward-button {
-    background-color: #9257b9;
+    background-color: #97A5C8;
     color: #29963b;
 }
 
 audio::-webkit-media-controls-mute-button {
-    background-color: #9257b9;
+    background-color: #97A5C8;
     color: #45cbe2;
 }
 
