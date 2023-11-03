@@ -203,14 +203,115 @@
   body {
     font-family: 'Bit Cell';
     background: linear-gradient(to top, white, #576FAD);
-    margin: 0;
   }
   
   footer {
-    position: absolute;
-    left: 0;
-    top: 100%;
     font-family: 'Bit Cell';
     font-size: 30px;
-    padding-left: 50px;
+    height: 10%;
+    position: absolute;
+    margin-left: 50px;
+  }
+
+  .content {
+    margin-left: 50px;
+    font-family: 'Bit Cell';
+  }
+
+  .console {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+    font-family: 'Bit Cell';
+    background-color: #AEBDEA;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+  
+  .console img {
+    width: 200px;
+  }
+  
+  .console h3 {
+    font-size: 35px;
+    margin-top: 1px;
+  }
+  
+  .console p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .console button {
+    background-color: #FBD406;
+    color: black;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 100%;
+    font-family: 'Bit Cell';
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .product {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+  
+  .product img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* .product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .product p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  } */
+  
+  .product button {
+    background-color: #FBD406;
+    color: black;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    padding-top: 5px; 
+    font-family: 'Bit Cell';
+  }
+  .buybutton {
+    top: 100%;
+  }
+  .buybutton img {
+    background-color: #FBD406;
+    width: 20px;
+    right: 0px;
   }
