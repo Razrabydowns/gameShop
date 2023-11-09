@@ -228,6 +228,7 @@
     border-bottom-right-radius: 5%;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+    height: 300px;
   }
   
   .console img {
@@ -236,7 +237,10 @@
   
   .console h3 {
     font-size: 35px;
-    margin-top: 1px;
+    top: 100%;
+    padding-bottom: 50px;
+    position: sticky;
+    margin: 0;
   }
   
   .console p {
@@ -257,6 +261,8 @@
     cursor: pointer;
     font-size: 30px;
     width: 100%;
+    position: relative;
+    padding-top: 5px; 
     font-family: 'Bit Cell';
   }
   
