@@ -1,39 +1,47 @@
 
-function OutRegistration() {
-    var enter = document.getElementById("registration");
+function OutEnter() {
+    var enter = document.getElementById("enter");
     enter.style.display = "none";
 
-    //Очистка полей после закрытия окна регистрации
+    //Очистка полей после закрытия окна входа
     var login = document.getElementById("login");
     var password = document.getElementById("password");
     login.value = '';
     password.value = '';
 }
-function InRegistration() {
-    var enter = document.getElementById("registration");
-    enter.style.display = "block";
+function InEnter() {
+    var enter = document.getElementById("enter");
+    enter.style.display = "flex";
 }
 
-function audioPlayer(){
-    var currentSong = 0;
-    $("#audioPlayer")[0].src = $("#playlist li a")[0];
-    $("#audioPlayer")[0].play();
-    $("#playlist li a").click(function(e){
-       e.preventDefault(); 
-       $("#audioPlayer")[0].src = this;
-       $("#audioPlayer")[0].play();
-       $("#playlist li").removeClass("current-song");
-        currentSong = $(this).parent().index();
-        $(this).parent().addClass("current-song");
-    });
-    
-    $("#audioPlayer")[0].addEventListener("ended", function(){
-       currentSong++;
-        if(currentSong == $("#playlist li a").length)
-            currentSong = 0;
-        $("#playlist li").removeClass("current-song");
-        $("#playlist li:eq("+currentSong+")").addClass("current-song");
-        $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-        $("#audioPlayer")[0].play();
-    });
+function OutRegistration() {
+    var enter = document.getElementById("registration");
+    enter.style.display = "none";
+
+    //Очистка полей после закрытия окна регистрации
+    var login = document.getElementById("loginReg");
+    var password = document.getElementById("passwordReg");
+    var email = document.getElementById("emailReg");
+    login.value = '';
+    password.value = '';
+    email.value = '';
+}
+function InRegistration() {
+    var enter = document.getElementById("registration");
+    enter.style.display = "flex";
+}
+
+function OutIForgotPassword() {
+    var enter = document.getElementById("iForgotPassword");
+    enter.style.display = "none";
+
+    //Очистка полей после закрытия окна регистрации
+    var login = document.getElementById("loginForgot");
+    var email = document.getElementById("emailForgot");
+    login.value = '';
+    email.value = '';
+}
+function InIForgotPassword() {
+    var enter = document.getElementById("iForgotPassword");
+    enter.style.display = "flex";
 }

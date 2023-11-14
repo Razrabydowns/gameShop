@@ -53,14 +53,14 @@
                 </div>
             </div>
         </div>
-        <div class="login" onclick='InRegistration()'>
-            <a href="#">Регистрация</a>
-            <a href="#">Вход</a>
+        <div class="login" onclick='InEnter()'>
+            <a>Регистрация</a>
+            <a>Вход</a>
         </div>
-        <div class="registration" id="registration">
+        <div style="height: 549px;" class="enter" id="enter">
             <form>
                 <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
-                    src="src/cancel.png" onclick='OutRegistration()'>
+                    src="src/cancel.png" onclick='OutEnter()'>
                 <br>
                 <p>Номер телефона:
                     <img src="src/phoneCall.png">
@@ -70,9 +70,51 @@
                     <img src="src/lock.png">
                     <br><input type="password" id="password" placeholder="IDDQD"></input>
                     <br><br>
-                    <a style="color: #FBD406">Я забыл пароль</a>
+                    <a style="color: #FBD406" onclick='InIForgotPassword()'>Я забыл пароль</a>
                     <br>
-                    <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+                    <br>Нет аккаунта?<a style="color: #CE323B;" onclick='InRegistration()'>Зарегистрируйтесь</a>
+                </p>
+                <button type="button">Войти</button>
+            </form>
+        </div>
+        <div class="enter" id="registration">
+            <form>
+                <p style="color: #FBD406;">Регистрация</p>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutRegistration()'>
+                <p>Номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="loginReg"></input>
+                <p>Пароль:
+                    <img src="src/lock.png">
+                    <br><input type="password" id="passwordReg"></input>
+                <p>Почта:
+                    <img src="src/mail.png">
+                    <br><input type="text" id="emailReg"></input>
+
+                <p style="font-size: 20px;"><input style="height:30px; width: 30px;" type="checkbox"
+                        id="isGetAd"></input>Я хочу получать
+                    рекламную рассылку по указаному email</p>
+                <button type="button">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="enter" id="iForgotPassword">
+            <form>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutIForgotPassword()'>
+                <br>
+                <p>Нам нужен ваш номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="loginForgot"
+                        placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                <p>Или почта:
+                    <img src="src/mail.png">
+                    <br><input type="text" id="emailForgot" placeholder="IDDQD"></input>
+                <p>Мы отправим вам письмо c
+                <div style="color: red;">временным паролем</div>> на почту или
+                в сообщения. По возможности смените
+                пароль после завершения этой процедуры.</p>
+                <button type="button">Отправить письмо на почту</button>
             </form>
         </div>
     </div>
