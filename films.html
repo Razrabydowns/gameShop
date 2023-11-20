@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/films.css">
+    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
+    <title>gameShop</title>
+    <script type="text/javascript" src="js/registration.js"></script>
+</head>
+
+<header>
+    <div class="menu">
+        <a class="menuRef" href="main.html">OLD_STUFF</a>
+        <div class="menu-items">
+            <div class="dropdown">
+                <p class="dropbtn">VHS</p>
+                <div class="dropdown-content">
+                    <a href="vhs.html">Ретро-классика</a>
+                    <a href="vhs.html">Ужасы и фантастика</a>
+                    <a href="vhs.html">Боевики и детективы</a>
+                    <a href="vhs.html">Аниме</a>
+                    <a href="vhs.html">Хентай и эротика</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Консоли и диски</p>
+                <div class="dropdown-content">
+                    <a href="#">Nintendo</a>
+                    <a href="#">Playstation</a>
+                    <a href="#">Sega Master Systems</a>
+                    <a href="#">Atari</a>
+                    <a href="#">Диски </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Музыка</p>
+                <div class="dropdown-content">
+                    <a href="mus.html">СD диски </a>
+                    <a href="mus.html">Касеты</a>
+                    <a href="mus.html">Винил</a>
+                    <a href="mus.html">Walkman</a>
+                    <a href="mus.html">Сборные альбомы</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Аксессуары</p>
+                <div class="dropdown-content">
+                    <a href="#">Переходники</a>
+                    <a href="#">Геймпады</a>
+                    <a href="#">Фигурки</a>
+                    <a href="#">Плакаты</a>
+                </div>
+            </div>
+        </div>
+        <div class="login" onclick='InRegistration()'>
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+        </div>
+        <div class="enter" id="enter">
+            <form>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutRegistration()'>
+                <br>
+                <p>Номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="login"
+                        placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                <p>Пароль:
+                    <img src="src/lock.png">
+                    <br><input type="password" id="password" placeholder="IDDQD"></input>
+                    <br><br>
+                    <a style="color: #FBD406">Я забыл пароль</a>
+                    <br>
+                    <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+            </form>
+        </div>
+    </div>
+    <div class="search">
+        <form>
+            <img src="src/search.png" type="submit" name="submit" id="submit">
+            <input type="text" name="text" id="search" placeholder="Найдите нужный вам товар, указав название"></input>
+        </form>
+    </div>
+</header>
+
+<body>
+    <div class="films-page">
+        <div class="film">
+            <img class="poster"
+                src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/e26044e5-2d5a-4b38-a133-a776ad93366f/orig">
+            <h3>Побег из Шоушенка</h3>
+            <span>The Shawshank Redemption, 1994, 142 мин.</span><br><br>
+            <span>США. драма. Режиссер: Фрэнк Дарабонт. </span><br><br>
+            <span>Рейтинг фильма</span>
+            <span class="bg">1</span>
+            <img class="basket" src="src/films/basket.png">
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Круглосуточно<img src="src/clock.png">
+        <br>Новосибирск-Советская 40<img src="src/locationPointer.png">
+    </p>
+</footer>
+
+</html>
