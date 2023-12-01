@@ -1,19 +1,20 @@
-<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="css/music.css">
-    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
-    <title>gameShop</title>
-    <script type="text/javascript" src="js/registration.js"></script>
-    <script type="text/javascript" src="js/music.js"></script>
-    <link
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/music.css">
+    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
+    <title>gameShop</title>
+    <script type="../text/javascript" src="../../js/registration.js"></script>
+    <script type="../text/javascript" src="../../js/music.js"></script>
 </head>
-
 <header>
     <div class="menu">
         <a class="menuRef" href="main.html">OLD_STUFF</a>
@@ -88,37 +89,89 @@
         </form>
     </div>
 </header>
-
 <body>
-    <style>
-        .swiper{
-            margin-top: 100px;
-        margin-left: 20px;
-        margin-right: 10px;
-        width: 97%;
-        height: auto;
-        position: inherit;
-        top: 0;
-        right: 0;
-        display: inline-block;
-        }
-        .swiper-slide{
-            padding: 10px;
-        border-radius: 10px;
-        width: 47%;
-        height: 380px;
-        flex-shrink: 0;
-        display: inline-block;
-        }
-        .swiper-button-next, .swiper-rtl .swiper-button-prev{
-          right: 140px !important; 
-          left: auto;
-        }
-        .swiper-button-prev, .swiper-rtl .swiper-button-next{
-          left: 140px !important; 
-          right: auto;
-        }
-      </style>
+  <style>
+    html,
+    body{
+      height: 100%;
+      font-size: 15px;
+    }
+    .swiper{
+        margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 97%;
+    height: auto;
+    position: inherit;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    }
+    .swiper-slide{
+        padding: 10px;
+    border-radius: 10px;
+    width: 47%;
+    height: 380px;
+    flex-shrink: 0;
+    display: inline-block;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+      right: 140px !important; 
+      left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      left: 140px !important; 
+      right: auto;
+    }
+
+  </style>
+<div class="song">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: black;">
+        <img src="../../src/music/devochka.png" alt="baba">
+        <img src="../../src/music/crystalcastles.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
+        <div> <p>text</p></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="song">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
+        <img src="../../src/music/muziki.png" alt="chel" style="padding-left: 20px;">
+        <img src="../../src/music/brat.png" alt="brat" style="float: right;  top: 0; position: relative; width: 120px;">
+        <div> <p>text</p></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+      </div>
+    </div>
+  </div></div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>
+
+
+
 
 <div class="song">
     <div class="swiper mySwiper">
@@ -126,17 +179,12 @@
         <div class="swiper-slide" style="background: black;">
             <img src="src/music/devochka.png" alt="baba">
             <img src="src/music/crystalcastles.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
-            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
-                <li class="current-song"><a href="media/Super_Mario.mp3">
-                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
+            <div> <p>text</p></div>
         </div>
         <div class="swiper-slide" style="background: #4A1A8E">
             <img src="src/music/anime.png" alt="baba">
-            <img src="src/music/minianime.png" alt="cc" style="float: right; right: 40px; top: 0; position: relative; width: 120px;">
-            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
-                <li class="current-song"><a href="media/Super_Mario.mp3">
-                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
-        </div>
+            <img src="src/music/minianime.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
+            <div> <p>text</p></div>
         </div>
     </div>
     </div>
@@ -147,55 +195,11 @@
         <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
             <img src="src/music/muziki.png" alt="chel" style="padding-left: 20px;">
             <img src="src/music/brat.png" alt="brat" style="float: right;  top: 0; position: relative; width: 120px;">
-            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
-                <li class="current-song"><a href="media/Super_Mario.mp3">
-                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
+            <div> <p>text</p></div>
         </div>
-        <div class="swiper-slide" style="background: #DFDFDF; float: right; right: 20px;">
-            <img src="src/music/kiss.png" alt="chel" style="padding-left: 20px;">
-            <img src="src/music/kissx.png" alt="brat" style="float: right; right: 20px; top: 0; position: relative; width: 120px;">
-            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
-                <li class="current-song"><a href="media/Super_Mario.mp3">
-                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
+        <div class="swiper-slide">
+            <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
         </div>
     </div>
     </div>
 </div>
-
-
-    <div>
-        <div style="left: 50%; top: 50%;">
-            <ul id="playlist">
-            </ul>
-        </div>
-    </div>
-    <footer>
-        <p>Круглосуточно<img src="src/clock.png">
-            <br>Новосибирск-Советская 40<img src="src/locationPointer.png">
-        </p>
-    </footer>
-        <audio src="" controls id="audioPlayer">
-            <a href=""> Download audio </a>
-        </audio>
-    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="audioPlayer.js"></script>
-    <script>
-        audioPlayer();
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          mousewheel: true,
-          keyboard: true,
-        });
-    </script>
-</body>
-
-</html>
