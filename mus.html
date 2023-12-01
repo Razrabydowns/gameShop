@@ -86,6 +86,71 @@
 </header>
 
 <body>
+    <style>
+        html,
+        body{
+          height: 100%;
+          font-size: 15px;
+        }
+        .swiper{
+            margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 97%;
+        height: auto;
+        position: inherit;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        }
+        .swiper-slide{
+            padding: 10px;
+        border-radius: 10px;
+        width: 47%;
+        height: 380px;
+        flex-shrink: 0;
+        display: inline-block;
+        }
+        .swiper-button-next, .swiper-rtl .swiper-button-prev{
+          right: 140px !important; 
+          left: auto;
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next{
+          left: 140px !important; 
+          right: auto;
+        }
+    </style>
+
+    <div class="song">
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: black;">
+            <img src="src/music/devochka.png" alt="baba">
+            <img src="src/music/crystalcastles.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
+            <div> <p>text</p></div>
+            </div>
+            <div class="swiper-slide">
+            <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="song">
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
+            <img src="src/music/muziki.png" alt="chel" style="padding-left: 20px;">
+            <img src="src/music/brat.png" alt="brat" style="float: right;  top: 0; position: relative; width: 120px;">
+            <div> <p>text</p></div>
+            </div>
+            <div class="swiper-slide">
+            <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     <div class="songs">
         <div class="song" style="background: black;">
             <img src="src/music/devochka.png" alt="baba">

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/music.css">
+    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
+    <title>gameShop</title>
+    <script type="../text/javascript" src="../../js/registration.js"></script>
+    <script type="../text/javascript" src="../../js/music.js"></script>
+</head>
+<header>
+    <div class="menu">
+        <a class="menuRef" href="main.html">OLD_STUFF</a>
+        <div class="menu-items">
+            <div class="dropdown">
+                <p class="dropbtn">VHS</p>
+                <div class="dropdown-content">
+                    <a href="vhs.html">Ретро-классика</a>
+                    <a href="vhs.html">Ужасы и фантастика</a>
+                    <a href="vhs.html">Боевики и детективы</a>
+                    <a href="vhs.html">Аниме</a>
+                    <a href="vhs.html">Хентай и эротика</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Консоли и диски</p>
+                <div class="dropdown-content">
+                    <a href="#">Nintendo</a>
+                    <a href="#">Playstation</a>
+                    <a href="#">Sega Master Systems</a>
+                    <a href="#">Atari</a>
+                    <a href="#">Диски </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Музыка</p>
+                <div class="dropdown-content">
+                    <a href="mus.html">СD диски </a>
+                    <a href="mus.html">Касеты</a>
+                    <a href="mus.html">Винил</a>
+                    <a href="mus.html">Walkman</a>
+                    <a href="mus.html">Сборные альбомы</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">Аксессуары</p>
+                <div class="dropdown-content">
+                    <a href="#">Переходники</a>
+                    <a href="#">Геймпады</a>
+                    <a href="#">Фигурки</a>
+                    <a href="#">Плакаты</a>
+                </div>
+            </div>
+        </div>
+        <div class="login" onclick='InRegistration()'>
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+        </div>
+        <div class="enter" id="enter">
+            <form>
+                <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                    src="src/cancel.png" onclick='OutRegistration()'>
+                <br>
+                <p>Номер телефона:
+                    <img src="src/phoneCall.png">
+                    <br><input type="text" id="login"
+                        placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                <p>Пароль:
+                    <img src="src/lock.png">
+                    <br><input type="password" id="password" placeholder="IDDQD"></input>
+                    <br><br>
+                    <a style="color: #FBD406">Я забыл пароль</a>
+                    <br>
+                    <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+            </form>
+        </div>
+    </div>
+    <div class="search">
+        <form>
+            <img src="src/search.png" type="submit" name="submit" id="submit">
+            <input type="text" name="text" id="search" placeholder="Найдите нужный вам товар, указав название"></input>
+        </form>
+    </div>
+</header>
+<body>
+  <style>
+    html,
+    body{
+      height: 100%;
+      font-size: 15px;
+    }
+    .swiper{
+        margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 97%;
+    height: auto;
+    position: inherit;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    }
+    .swiper-slide{
+        padding: 10px;
+    border-radius: 10px;
+    width: 47%;
+    height: 380px;
+    flex-shrink: 0;
+    display: inline-block;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+      right: 140px !important; 
+      left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      left: 140px !important; 
+      right: auto;
+    }
+
+  </style>
+<div class="song">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: black;">
+        <img src="../../src/music/devochka.png" alt="baba">
+        <img src="../../src/music/crystalcastles.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
+        <div> <p>text</p></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="song">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
+        <img src="../../src/music/muziki.png" alt="chel" style="padding-left: 20px;">
+        <img src="../../src/music/brat.png" alt="brat" style="float: right;  top: 0; position: relative; width: 120px;">
+        <div> <p>text</p></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
+      </div>
+    </div>
+  </div></div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>
