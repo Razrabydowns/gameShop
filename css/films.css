@@ -1,0 +1,45 @@
+.films-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+
+    padding-top: 5%;
+}
+
+.film {
+    width: 20%;
+    background-color: white;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+
+    margin: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.poster {
+    width: 76px;
+    height: 114px;
+    float: right;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+.basket {
+    height: 20px;
+    width: 20px;
+    float: right;
+    padding-right: 5px;
+}
+
+.bg {
+    background-image: url('../src/films/greenEllipse.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 8px;
+    background-position: center;
+}
