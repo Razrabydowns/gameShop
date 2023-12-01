@@ -8,6 +8,10 @@
     <title>gameShop</title>
     <script type="text/javascript" src="js/registration.js"></script>
     <script type="text/javascript" src="js/music.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <header>
@@ -87,11 +91,6 @@
 
 <body>
     <style>
-        html,
-        body{
-          height: 100%;
-          font-size: 15px;
-        }
         .swiper{
             margin-top: 100px;
         margin-left: 20px;
@@ -119,72 +118,55 @@
           left: 140px !important; 
           right: auto;
         }
-    </style>
+      </style>
 
-    <div class="song">
-        <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background: black;">
+<div class="song">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: black;">
             <img src="src/music/devochka.png" alt="baba">
             <img src="src/music/crystalcastles.png" alt="cc" style="float: right; right: 10px; top: 0; position: relative; width: 190px;">
-            <div> <p>text</p></div>
-            </div>
-            <div class="swiper-slide">
-            <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
-            </div>
+            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
+                <li class="current-song"><a href="media/Super_Mario.mp3">
+                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
+        </div>
+        <div class="swiper-slide" style="background: #4A1A8E">
+            <img src="src/music/anime.png" alt="baba">
+            <img src="src/music/minianime.png" alt="cc" style="float: right; right: 40px; top: 0; position: relative; width: 120px;">
+            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
+                <li class="current-song"><a href="media/Super_Mario.mp3">
+                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
         </div>
         </div>
     </div>
-    <div class="song">
-        <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
+    </div>
+</div>
+<div class="song">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: #242B2B; float: right; right: 20px;">
             <img src="src/music/muziki.png" alt="chel" style="padding-left: 20px;">
             <img src="src/music/brat.png" alt="brat" style="float: right;  top: 0; position: relative; width: 120px;">
-            <div> <p>text</p></div>
-            </div>
-            <div class="swiper-slide">
-            <img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg">
-            </div>
+            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
+                <li class="current-song"><a href="media/Super_Mario.mp3">
+                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
         </div>
-        </div>
-    </div>
-
-
-    <div class="songs">
-        <div class="song" style="background: black;">
-            <img src="src/music/devochka.png" alt="baba">
-            <img src="src/music/crystalcastles.png" alt="cc" style="float: right; top: 0; position: relative; width: 190px;">
-            <div> <p>text</p></div>
-        </div>
-        <div class="song" style="background: #242B2B; float: right; right: 20px;">
-            <img src="src/music/muziki.png" alt="chel">
-            <img src="src/music/brat.png" alt="brat" style="float: right; top: 0; position: relative; width: 120px;">
-            <div> <p>text</p></div>
+        <div class="swiper-slide" style="background: #DFDFDF; float: right; right: 20px;">
+            <img src="src/music/kiss.png" alt="chel" style="padding-left: 20px;">
+            <img src="src/music/kissx.png" alt="brat" style="float: right; right: 20px; top: 0; position: relative; width: 120px;">
+            <div class="listen"> <ul id="playlist" style=" bottom: 10px;">
+                <li class="current-song"><a href="media/Super_Mario.mp3">
+                    <img src="src/music/mp.png" alt=""></a></li></ul></div>
         </div>
     </div>
+    </div>
+</div>
 
 
-
-
-
-    <h2 style="position: absolute;left: 10%; font-size: 100px;">Music</h2>
     <div>
-        <audio src="" controls id="audioPlayer">
-            <a href="media/Super_Mario.mp3"> Download audio </a>
-        </audio>
         <div style="left: 50%; top: 50%;">
             <ul id="playlist">
-                <li class="current-song"><a href="media/Super_Mario.mp3">Mario</a></li>
-                <li><a href="media/Battletoads.mp3"><img src="src/music/mp.png"></a></li>
-                <li><a href="media/ChipDail.mp3"><img src="src/music/mp.png"></a></li>
-                <li><a href="media/tetris.mp3">Tetris</a></li>
             </ul>
-            <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-            <script src="audioPlayer.js"></script>
-            <script>
-                audioPlayer();
-            </script>
         </div>
     </div>
     <footer>
@@ -192,6 +174,28 @@
             <br>Новосибирск-Советская 40<img src="src/locationPointer.png">
         </p>
     </footer>
+        <audio src="" controls id="audioPlayer">
+            <a href=""> Download audio </a>
+        </audio>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        audioPlayer();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+    </script>
 </body>
 
 </html>
