@@ -3,7 +3,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/music.css">
     <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
     <title>gameShop</title>
@@ -87,8 +86,24 @@
 </header>
 
 <body>
+    <div class="songs">
+        <div class="song" style="background: black;">
+            <img src="src/music/devochka.png" alt="baba">
+            <img src="src/music/crystalcastles.png" alt="cc" style="float: right; top: 0; position: relative; width: 190px;">
+            <div> <p>text</p></div>
+        </div>
+        <div class="song" style="background: #242B2B; float: right; right: 20px;">
+            <img src="src/music/muziki.png" alt="chel">
+            <img src="src/music/brat.png" alt="brat" style="float: right; top: 0; position: relative; width: 120px;">
+            <div> <p>text</p></div>
+        </div>
+    </div>
+
+
+
+
+
     <h2 style="position: absolute;left: 10%; font-size: 100px;">Music</h2>
-    <img src="src/music/plast.gif" style="position: absolute; top:30%;left: 0%;">
     <div>
         <audio src="" controls id="audioPlayer">
             <a href="media/Super_Mario.mp3"> Download audio </a>
@@ -96,8 +111,8 @@
         <div style="left: 50%; top: 50%;">
             <ul id="playlist">
                 <li class="current-song"><a href="media/Super_Mario.mp3">Mario</a></li>
-                <li><a href="media/Battletoads.mp3">Battletoads</a></li>
-                <li><a href="media/ChipDail.mp3">Chip and Dail</a></li>
+                <li><a href="media/Battletoads.mp3"><img src="src/music/mp.png"></a></li>
+                <li><a href="media/ChipDail.mp3"><img src="src/music/mp.png"></a></li>
                 <li><a href="media/tetris.mp3">Tetris</a></li>
             </ul>
             <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
