@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/music.css">
+    <link rel="stylesheet" href="tet.css">
+    <link href="fonts/bitcell_memesbruh03.ttf" rel="stylesheet">
+    <title>gameShop</title>
+    <script type="text/javascript" src="../../js/registration.js"></script>
+    <script type="text/javascript" src="tet.js"></script>
+</head>
+<header>
+        <div class="menu">
+            <a class="menuRef" href="main.html">OLD_STUFF</a>
+            <div class="menu-items">
+                <div class="dropdown">
+                    <p class="dropbtn">VHS</p>
+                    <div class="dropdown-content">
+                        <a href="vhs.html">Ретро-классика</a>
+                        <a href="vhs.html">Ужасы и фантастика</a>
+                        <a href="vhs.html">Боевики и детективы</a>
+                        <a href="vhs.html">Аниме</a>
+                        <a href="vhs.html">Хентай и эротика</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropbtn">Консоли и диски</p>
+                    <div class="dropdown-content">
+                        <a href="#">Nintendo</a>
+                        <a href="#">Playstation</a>
+                        <a href="#">Sega Master Systems</a>
+                        <a href="#">Atari</a>
+                        <a href="#">Диски </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropbtn">Музыка</p>
+                    <div class="dropdown-content">
+                        <a href="mus.html">СD диски </a>
+                        <a href="mus.html">Касеты</a>
+                        <a href="mus.html">Винил</a>
+                        <a href="mus.html">Walkman</a>
+                        <a href="mus.html">Сборные альбомы</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropbtn">Аксессуары</p>
+                    <div class="dropdown-content">
+                        <a href="#">Переходники</a>
+                        <a href="#">Геймпады</a>
+                        <a href="#">Фигурки</a>
+                        <a href="#">Плакаты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login" onclick='InRegistration()'>
+                <a href="#">Регистрация</a>
+                <a href="#">Вход</a>
+            </div>
+            <div class="enter" id="enter">
+                <form>
+                    <img style="position: absolute;top: 0;right: 0; padding-right: 25px;padding-top: 25px;"
+                        src="src/cancel.png" onclick='OutRegistration()'>
+                    <br>
+                    <p>Номер телефона:
+                        <img src="src/phoneCall.png">
+                        <br><input type="text" id="login"
+                            placeholder="+7&nbsp&nbsp(&nbsp&nbsp)&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp-"></input>
+                    <p>Пароль:
+                        <img src="src/lock.png">
+                        <br><input type="password" id="password" placeholder="IDDQD"></input>
+                        <br><br>
+                        <a style="color: #FBD406">Я забыл пароль</a>
+                        <br>
+                        <br>Нет аккаунта?<a style="color: #CE323B;">Зарегистрируйтесь</a>
+                </form>
+            </div>
+        </div>
+        <div class="search">
+            <form>
+                <img src="src/search.png" type="submit" name="submit" id="submit">
+                <input type="text" name="text" id="search" placeholder="Найдите нужный вам товар, указав название"></input>
+            </form>
+        </div>
+                <button class="cart" id="cart">
+                    <img src="../../src/cageroller.png" style="margin-top:-18px; float: right; position: absolute;">
+                        
+                    <div class="cart__num" id="cart_num">0</div>
+                </button>
+                <div class="popup">
+                    <div class="popup__container" id="popup_container">
+                      <div class="popup__item">
+                        <h1 class="popup__title">Оформление заказа</h1>
+                      </div>
+                      <div class="popup__item" id="popup_product_list">
+                        <div class="popup__product">
+                          <div class="popup__product-wrap">
+                            <img
+                              src="./images/iphone-14-pro-max-gold.png"
+                              alt="Apple IPhone 14 Pro Max 256Gb"
+                              class="popup__product-image"
+                            />
+                            <h2 class="popup__product-title">
+                              
+                            </h2>
+                          </div>
+                          <div class="popup__product-wrap">
+                            <div class="popup__product-price">0</div>
+                            <button class="popup__product-delete">&#10006;</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__item">
+                        <div class="popup__cost">
+                          <h2 class="popup__cost-title">Total</h2>
+                          <output class="popup__cost-value" id="popup_cost">0</output>
+                        </div>
+                        
+                      </div>
+                      <button class="popup__close" id="popup_close">&#10006;</button>
+                    </div>
+                </div>
+                <img src="../../src/cageroller.png">
+    
+                </div>
+        </nav>
+        <a href="#">
+            <img src="img.png" alt="" class="logo">
+        </a>
+    </header>
+<body>
+    
+    <script src="./poisk.js"></script>
+    <div class="containerline">
+        <div class="black-bar">
+            <p class="white-text" id="cakessilka">C A K E</p>
+        </div>
+    </div>
+    
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="../../src/music/anime.png" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Sponge cake with vanilla cream. Decorated with berries.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">18</p>
+            </div>
+              <button class="card__add"><img src="../../src/cageroller.png" style="margin-top:-18px; float: right;">
+            </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cake2.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Light sponge cake soaked in fruit juice with fruit cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">18</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cake3.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Thick chocolate sponge cake soaked in coffee syrup.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">19</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cake4.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Vanilla sponge cake soaked in syrup with vanilla cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">20</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+    <div class="containerline">
+        <div class="black-bar">
+            <p class="white-text" id="bentossilka">B E N T O</p>
+        </div>
+    </div>
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b1.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Heather vanilla sponge cake soaked in vanilla syrup with vanilla cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b2.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Delicate strawberry sponge cake soaked in strawberry syrup, with airy cream based on fresh strawberries.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">10</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b3.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Exquisite pistachio sponge cake, soaked in aromatic syrup, with delicate pistachio cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">8</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b4.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Juicy raspberry sponge cake soaked in fresh raspberry juice.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b5.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Delicate coconut sponge cake soaked in coconut syrup with coconut cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b6.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Fragrant nut sponge cake soaked in nut syrup with nut cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">10</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b7.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Fluffy caramel sponge cake soaked in caramel syrup and caramel-based cream.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">8</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/b8.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Fresh citrus sponge cake, soaked in aromatic citrus juice.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+    <div class="containerline">
+        <div class="black-bar">
+            <p class="white-text" id="cofessilka">C O F E</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cofe1jpg.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Exotic coffee with notes of spice and the of caramel.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cofe2.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Rich and full-bodied coffee with deep chocolate undertones and strong bitterness.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">10</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cofe3.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Strong and piquant coffee with notes of dark chocolate.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">8</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cofe4.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Delicate and aromatic coffee with notes of vanilla.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/cofe5.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                A refreshing and fruity coffee with vibrant notes of tropical fruits such as mango and pineapple.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">9</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+    <div class="containerline">
+        <div class="black-bar">
+            <p class="white-text" id="cupcakesssilka">C U P C A K E S</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/pankcackeks.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Tender lemon pancakes with maple similar.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">10</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/pan6.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Nut cupcake with crunchy nut pieces
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">11</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/pan7.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Delicate vanilla cupcake with white cream and pink flowers.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">15</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img src="cake/pan5.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+              </a>
+            </div>
+            <div class="card__bottom">
+              <p class="card__title">
+                Coconut flavored cupcake with coconut frosting and flakes.
+              </p>
+              <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">11</p>
+            </div>
+              <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="blocks">
+        <div class="card">
+            <div class="card__top">
+            <a href="#" class="card__image">
+                <img src="cake/pan4.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+            </a>
+            </div>
+            <div class="card__bottom">
+            <p class="card__title">
+                Exquisite cupcake with delicate pink dough and airy cream.
+            </p>
+            <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">10</p>
+            </div>
+            <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+            <a href="#" class="card__image">
+                <img src="cake/pan3.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+            </a>
+            </div>
+            <div class="card__bottom">
+            <p class="card__title">
+                Deep chocolate cupcake with icing and milk chocolate.
+            </p>
+            <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">12</p>
+            </div>
+            <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__top">
+            <a href="#" class="card__image">
+                <img src="cake/pan2.jpg" alt="Apple IPhone 14 PRO Max Gold" class="card__top">
+            </a>
+            </div>
+            <div class="card__bottom">
+            <p class="card__title">
+                Refreshing lemon cupcake with tart frosting.
+            </p>
+            <div style="display: flex;">
+                <b>Price: </b><p class="card__price card__price--common">13</p>
+            </div>
+            <button class="card__add"><i class="material-symbols-outlined" style="margin-top:-18px; float: right;">
+                shopping_bag
+            </i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./tet.js"></script>
+</body>
